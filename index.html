@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+
+    <div class="summary">
+      <div>Total Income: <span id="total-income">0</span></div>
+      <div>Total Expenses: <span id="total-expenses">0</span></div>
+      <div>Net Balance: <span id="net-balance">0</span></div>
+    </div>
+
+    <form id="entry-form">
+      <input type="text" id="description" placeholder="Description" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add Entry</button>
+      <button type="button" id="reset">Reset</button>
+    </form>
+
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked> All</label>
+      <label><input type="radio" name="filter" value="income"> Income</label>
+      <label><input type="radio" name="filter" value="expense"> Expense</label>
+    </div>
+
+    <ul id="entry-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

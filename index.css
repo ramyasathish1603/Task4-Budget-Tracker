@@ -1,0 +1,86 @@
+/* Basic Reset and Font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form select,
+  form button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .filters label {
+    margin-right: 10px;
+  }
+  
+  #entry-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .entry {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 4px solid #28a745;
+    border-radius: 4px;
+  }
+  
+  .entry.expense {
+    border-color: #dc3545;
+  }
+  
+  .entry button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .entry button:hover {
+    text-decoration: underline;
+  }
+  
+  
